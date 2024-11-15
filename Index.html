@@ -1,0 +1,205 @@
+```html
+<html>
+<head>
+  <base href="/" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAP'G Coin - The Next Tiger Meme Coin! 🐯</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #e5f4f6;
+      color: #ff761e;
+      overflow-x: hidden;
+    }
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 1rem 2rem;
+      background: #fff;
+      border-bottom: 2px solid #b3e1e6;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0 0 15px 15px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      color: #ff761e;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: all 0.3s;
+    }
+    .nav-links a:hover {
+      color: #4aa3a0;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #4aa3a0 20%, #fff 80%);
+      padding-top: 80px;
+      border-radius: 0 0 50% 50%;
+      position: relative;
+    }
+    .hero-content {
+      text-align: center;
+      max-width: 800px;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 6rem;
+      margin-bottom: 1rem;
+      color: #ff761e;
+    }
+    .hero p {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: #ff761e;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .cta-btn {
+      background: #4aa3a0;
+      color: #fff;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+    .cta-btn:hover {
+      background: #369a9d;
+      color: #fff;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background: #fff;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      margin-top: -5rem;
+    }
+    .feature-card {
+      background: #e5f4f6;
+      padding: 2rem;
+      border: 2px solid #b3e1e6;
+      text-align: center;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .feature-card h3 {
+      color: #ff761e;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      animation: float 3s infinite ease-in-out;
+      filter: drop-shadow(0 0 10px #4aa3a0);
+      border-radius: 50%;
+    }
+    .links-footer {
+      background: #101010;
+      padding: 2rem;
+      text-align: center;
+      color: #fff;
+      border-radius: 15px 15px 0 0;
+    }
+    .links-footer a {
+      color: #4aa3a0;
+      font-size: 1.2rem;
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .links-footer a:hover {
+      color: #369a9d;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <img alt="Cartoon tiger logo" src="/Capture_d_écran_2024-11-07_à_22.22.27-removebg-preview.png" width="100" height="100" class="logo">
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="https://pancakeswap.finance/" target="_blank">Buy Now</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <h1>BAP'G COIN</h1>
+      <p>The Fierce Tiger of DeFi 🐯</p>
+      <div class="cta-buttons">
+        <a href="https://pancakeswap.finance/" target="_blank" class="cta-btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature-card">
+      <h3>Community Driven</h3>
+      <p>Built by the community, for the community. BAP'G is 100% decentralized.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Secure & Audited</h3>
+      <p>Contract audited by leading security firms. Your funds are safe with BAP'G.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Deflationary</h3>
+      <p>2% of each transaction is burned forever, increasing scarcity over time.</p>
+    </div>
+  </section>
+
+  <footer class="links-footer">
+    <a href="https://t.me/yourtelegram" target="_blank">Telegram</a>
+    <a href="https://discord.com/invite/yourdiscord" target="_blank">Discord</a>
+    <a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a>
+    <a href="https://dexscreener.com/yourdex" target="_blank">DexScreener</a>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+```
